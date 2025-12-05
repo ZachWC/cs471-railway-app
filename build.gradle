@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.3.0.RELEASE'
+		springBootVersion = '3.2.0'  // or '2.7.18' if you must stay on Spring Boot 2.x
 	}
 	repositories {
 		mavenCentral()
@@ -16,7 +16,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'com.example'
 version = '1.0'
-sourceCompatibility = '1.8'
+sourceCompatibility = '17'  // Spring Boot 3.x requires Java 17+, or use '11' for 2.7.x
 
 repositories {
 	mavenCentral()
